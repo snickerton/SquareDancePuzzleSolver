@@ -50,7 +50,6 @@ public class Main {
 
 
             //choose box placements
-            //run commands
             masterLoop:
             for (int i = 0; i < 22; i++) {
                 jLoop:
@@ -80,7 +79,7 @@ public class Main {
                                 continue;
                             }
 
-                            //population a with boxes
+                            //populate 'a' with boxes
                             a[i/5][i%5] = -1;
                             a[j/5][j%5] = -1;
                             a[k/5][k%5] = -1;
@@ -92,6 +91,7 @@ public class Main {
                             System.out.println("Beginning Command Sequence...");
                             System.out.println("...");
 
+                            //run command sequence
                             cmdLoop:
                             for(int cmdCnt = 0; cmdCnt<cmds.length; cmdCnt++ ){
                                 switch(cmds[cmdCnt]){
