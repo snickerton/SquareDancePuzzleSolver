@@ -66,8 +66,7 @@ public class Main {
                             xPos = xStart;
                             yPos = yStart;
 
-
-                            //population a with boxes
+                            //do not allow boxes to spawn in holes, start positions, or end positions
                             if(base[i/5][i%5] == 1 || player[i/5][i%5] == 1 || player[i/5][i%5] == 2){
                                 break jLoop;
                             }
@@ -81,6 +80,7 @@ public class Main {
                                 continue;
                             }
 
+                            //population a with boxes
                             a[i/5][i%5] = -1;
                             a[j/5][j%5] = -1;
                             a[k/5][k%5] = -1;
@@ -89,7 +89,7 @@ public class Main {
                             System.out.println("Iteration Number: "+iterationCount);
                             System.out.println("Box Positions Generated.");
                             System.out.println("Worksheet Setup: \n" + Arrays.deepToString(a));
-                            System.out.println("Beginning Command Sequence.");
+                            System.out.println("Beginning Command Sequence...");
                             System.out.println("...");
 
                             cmdLoop:
@@ -124,15 +124,15 @@ public class Main {
                             System.out.println("Command Sequence Done.");
                             System.out.println("----------------------------------------------");
 
-                            //cbme
+                            iterationCount++;
+
+
+
                             //The Holy Grail.
-                            //
                             if(yPos == yEnd && xPos == xEnd && boardIsClear()){
-                                System.out.println("Solution Found. \n");
+                                System.out.println("\nSolution Found. \n");
                                 break masterLoop;
                             }
-
-                            iterationCount++;
 
                         }
                     }
