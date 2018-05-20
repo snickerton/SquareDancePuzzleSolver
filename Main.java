@@ -6,16 +6,16 @@ import java.util.Arrays;
 public class Main {
 
     private static int[][] base = new int[][]{
-            { 0, 1, 0, 0, 1 },
-            { 0, 0, 1, 0, 0 },
+            { 0, 0, 0, 0, 1 },
             { 0, 0, 0, 0, 0 },
             { 0, 0, 0, 0, 0 },
-            { 0, 0, 0, 0, 1 }
+            { 0, 0, 0, 0, 1 },
+            { 0, 0, 0, 1, 1 }
     };
     private static int[][] player = new int[][]{
-            { 0, 0, 2, 0, 0 },
-            { 0, 0, 0, 1, 0 },
+            { 2, 0, 0, 0, 0 },
             { 0, 0, 0, 0, 0 },
+            { 1, 0, 0, 0, 0 },
             { 0, 0, 0, 0, 0 },
             { 0, 0, 0, 0, 0 }
     };
@@ -28,7 +28,7 @@ public class Main {
     public static void main(String[] args) {
         copyArrays(a, base);
         boolean solved = false;
-        int[] cmds = {3,3,4,3,4,1,3,2,2,2,2,1,1,1,2,1,1,1,1,4,3,4,4,4,1,2,1,1};
+        int[] cmds = {2,2,3,2,2,2,4,1,1,2,3,3,3,4,3,3,2,1,2,2,1,1,1,2,3,3,3,4,4,1,1,2,4,4};
 
         int iterationCount = 0;
 
@@ -86,15 +86,11 @@ public class Main {
                             a[k/5][k%5] = -1;
                             a[l/5][l%5] = -1;
 
-                            System.out.println(i/5 +", "+ i%5);
-                            System.out.println(j/5 +", "+ j%5);
-                            System.out.println(k/5 +", "+ k%5);
-                            System.out.println(l/5 +", "+ l%5);
-
-                            System.out.println("Box Positions Generated. \n Iteration number: "+iterationCount);
-                            System.out.println("Beginning Command Sequence.");
-                            System.out.println("----------------------------------------------");
+                            System.out.println("Iteration Number: "+iterationCount);
+                            System.out.println("Box Positions Generated.");
                             System.out.println("Worksheet Setup: \n" + Arrays.deepToString(a));
+                            System.out.println("Beginning Command Sequence.");
+                            System.out.println("...");
 
                             cmdLoop:
                             for(int cmdCnt = 0; cmdCnt<cmds.length; cmdCnt++ ){
@@ -126,13 +122,13 @@ public class Main {
                                 }
                             }
                             System.out.println("Command Sequence Done.");
-
+                            System.out.println("----------------------------------------------");
 
                             //cbme
                             //The Holy Grail.
                             //
                             if(yPos == yEnd && xPos == xEnd && boardIsClear()){
-                                System.out.println("SOLUTION FOUND. \n");
+                                System.out.println("Solution Found. \n");
                                 break masterLoop;
                             }
 
