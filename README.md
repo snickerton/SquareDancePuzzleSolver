@@ -17,4 +17,4 @@ This is not a puzzle,
 Tony <3
 
 
-![alt text](https://drive.google.com/file/d/13FoTSlbF8IlR0t_rF9LHPo7q7NTPUn90/view)
+![alt text](https://drive.google.com/file/d/13FoTSlbF8IlR0t_rF9LHPo7q7NTPUn90/preview)
