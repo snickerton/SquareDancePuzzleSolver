@@ -17,5 +17,5 @@ This is not a puzzle,
 Tony <3
 
 # The Puzzle
-![test](/Square%20Dance%20Puzzle.pdf)
+![test](/PuzzleImage1.jpg)
 ![alt text](https://drive.google.com/file/d/128THxAMgHXrwPBAaNqMB-WTmIAXlHDrA/view)
