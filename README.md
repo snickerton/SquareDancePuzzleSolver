@@ -1,5 +1,5 @@
 # Long Story Short
-A program I wrote to solve the puzzle Square Dance in the 2018 PEA Puzzle Hunt.
+I wrote a program to solve the puzzle "Square Dance" in the 2018 PEA Puzzle Hunt.
 
 # Letter to HQ
 
