@@ -17,5 +17,5 @@ This is not a puzzle,
 Tony <3
 
 # The Puzzle
-![alt text](/PuzzleImage1.jpg)
+![alt text](/PuzzleImage1.jpg?raw=true)
 ![alt text](https://drive.google.com/file/d/128THxAMgHXrwPBAaNqMB-WTmIAXlHDrA/view)
